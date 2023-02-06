@@ -22,7 +22,7 @@ namespace TEST1
         private void button1_Click(object sender, EventArgs e)
         {
             IWebDriver chrom = new ChromeDriver();
-            chrom.Navigate().GoToUrl("http://www.facebook.com/");
+            chrom.Navigate().GoToUrl("http://www.google.com/");
             chrom.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(3);
             chrom.FindElement(By.XPath("//*[@id=\"email\"]")).SendKeys("8886140959");
             chrom.FindElement(By.XPath("//*[@id=\"pass\"]")).SendKeys("140959");
